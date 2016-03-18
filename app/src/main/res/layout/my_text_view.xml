@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@mipmap/ic_library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/imagem"
+        android:layout_alignBottom="@+id/textAno"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Element Title"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagem" />
+    <TextView
+        android:id="@+id/textAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Element Autor"
+        android:layout_below="@+id/textTitulo"
+        android:layout_alignStart="@+id/textTitulo" />
+    <TextView
+        android:id="@+id/textAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Element Date"
+        android:layout_below="@+id/textAutor"
+        android:layout_alignStart="@+id/textTitulo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textAutor"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"></LinearLayout>
+</RelativeLayout>
